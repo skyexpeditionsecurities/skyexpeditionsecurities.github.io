@@ -8,7 +8,7 @@
 body {
     margin:0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background:#0f2027;
     color:white;
 }
 
@@ -17,11 +17,9 @@ nav {
     display:flex;
     justify-content:space-between;
     padding:20px 40px;
-    background: rgba(0,0,0,0.5);
-}
-
-nav h2 {
-    margin:0;
+    background: rgba(0,0,0,0.7);
+    position: sticky;
+    top:0;
 }
 
 nav a {
@@ -32,17 +30,13 @@ nav a {
 
 /* HERO */
 .hero {
+    background:url('https://images.unsplash.com/photo-1581090700227-4c4a8b4d7d7d') center/cover;
+    padding:120px 20px;
     text-align:center;
-    padding:100px 20px;
 }
 
 .hero h1 {
     font-size:50px;
-}
-
-.hero p {
-    font-size:18px;
-    opacity:0.9;
 }
 
 .btn {
@@ -55,12 +49,13 @@ nav a {
     border-radius:25px;
 }
 
-/* SERVICES */
-.services {
-    padding:60px 20px;
+/* SECTION */
+.section {
+    padding:70px 20px;
     text-align:center;
 }
 
+/* CARDS */
 .cards {
     display:flex;
     flex-wrap:wrap;
@@ -73,25 +68,27 @@ nav a {
     padding:20px;
     border-radius:15px;
     background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    transition:0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
+/* TESTIMONIALS */
+.testimonial {
+    max-width:600px;
+    margin:20px auto;
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
 }
 
-/* TRUST SECTION */
-.trust {
-    padding:60px 20px;
-    text-align:center;
+/* BLOG */
+.blog {
+    max-width:300px;
 }
 
 /* FOOTER */
 footer {
-    text-align:center;
-    padding:20px;
     background:black;
+    padding:20px;
+    text-align:center;
 }
 </style>
 </head>
@@ -103,45 +100,75 @@ footer {
     <div>
         <a href="#">Home</a>
         <a href="#">Services</a>
+        <a href="#">Blog</a>
         <a href="#">Contact</a>
     </div>
 </nav>
 
 <div class="hero">
     <h1>Protecting Seniors from Cyber Threats</h1>
-    <p>Identity Theft | Social Security Protection | Computer Security</p>
+    <p>Identity Theft | Social Security Protection | Device Security</p>
     <button class="btn">Get Protection</button>
 </div>
 
-<div class="services">
+<div class="section">
     <h2>Our Services</h2>
-
     <div class="cards">
         <div class="card">
             <h3>Identity Protection</h3>
-            <p>We secure your personal data from hackers and scams.</p>
+            <p>Protect your personal information from hackers.</p>
         </div>
-
         <div class="card">
-            <h3>Fraud Protection</h3>
-            <p>Prevent scams targeting senior citizens in the USA.</p>
+            <h3>Fraud Prevention</h3>
+            <p>Stop scams targeting senior citizens.</p>
         </div>
-
         <div class="card">
             <h3>Device Security</h3>
-            <p>Full protection for computers, phones & online activity.</p>
+            <p>Secure your computers and mobile devices.</p>
         </div>
     </div>
 </div>
 
-<div class="trust">
+<div class="section">
     <h2>Why Choose Us?</h2>
-    <p>✔ Easy to Use<br>
+    <p>✔ Simple & Easy<br>
        ✔ Trusted Protection<br>
-       ✔ Built for Senior Citizens</p>
+       ✔ Built for Seniors<br>
+       ✔ 24/7 Monitoring</p>
 </div>
 
-<div class="services">
+<div class="section">
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial">
+        <p>"I was scammed once, but after using this service, I feel safe again."</p>
+        <strong>- John, USA</strong>
+    </div>
+
+    <div class="testimonial">
+        <p>"Very easy to use and extremely helpful for seniors like me."</p>
+        <strong>- Martha, USA</strong>
+    </div>
+
+</div>
+
+<div class="section">
+    <h2>Latest Blog</h2>
+
+    <div class="cards">
+        <div class="card blog">
+            <h3>Top 5 Online Scams in 2026</h3>
+            <p>Learn how to stay safe from modern cyber threats.</p>
+        </div>
+
+        <div class="card blog">
+            <h3>How Seniors Can Stay Safe Online</h3>
+            <p>Simple tips for daily protection.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
     <h2>Contact Us</h2>
     <p>Email: support@skyexpedition.com</p>
 </div>
