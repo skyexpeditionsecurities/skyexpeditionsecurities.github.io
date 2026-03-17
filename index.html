@@ -1,97 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Sky Expedition Securities</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sky Expedition Securities</title>
 
 <style>
 body {
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background:#f5f7fa;
+    font-family: Arial, sans-serif;
+    background:#f9f9f9;
     color:#222;
 }
 
-/* NAVBAR */
 nav {
     display:flex;
     justify-content:space-between;
-    padding:20px 40px;
-    background: rgba(0,0,0,0.7);
-    position: sticky;
-    top:0;
+    padding:15px 40px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav a {
-    color:white;
-    text-decoration:none;
     margin-left:20px;
+    text-decoration:none;
+    color:#333;
 }
 
-/* HERO */
 .hero {
-    background:url('https://images.unsplash.com/photo-1581090700227-4c4a8b4d7d7d') center/cover;
+    background:url('https://images.unsplash.com/photo-1581090700227-1e8a6f8c7c06') center/cover;
+    color:white;
     padding:120px 20px;
     text-align:center;
 }
 
 .hero h1 {
-    font-size:50px;
+    font-size:40px;
 }
 
 .btn {
-    margin-top:20px;
-    padding:12px 30px;
-    background:linear-gradient(45deg,#00c3ff,#00ffcc);
+    padding:12px 25px;
+    background:#007BFF;
+    color:white;
     border:none;
-    font-size:16px;
+    border-radius:6px;
     cursor:pointer;
-    border-radius:25px;
 }
 
-/* SECTION */
 .section {
-    padding:70px 20px;
+    padding:60px 20px;
     text-align:center;
 }
 
-.card {
-    width:260px;
-    padding:20px;
-    border-radius:12px;
-    background:white;
-    color:#222;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+.cards {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
 .card {
-    width:260px;
-    padding:20px;
-    border-radius:15px;
-    background: rgba(255,255,255,0.1);
-}
-
-/* TESTIMONIALS */
-.testimonial {
-    max-width:600px;
-    margin:20px auto;
+    width:280px;
     background:white;
-    color:#222;
     padding:20px;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* BLOG */
-.blog {
-    max-width:300px;
+.testimonial {
+    max-width:600px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
 }
 
-/* FOOTER */
-footer {
-    background:black;
-    padding:20px;
-    text-align:center;
+form input, form textarea {
+    width:100%;
+    padding:10px;
+    margin:10px 0;
 }
 </style>
 </head>
@@ -110,103 +97,53 @@ footer {
 
 <div class="hero">
     <h1>Protecting Seniors from Cyber Threats</h1>
-    <p>Identity Theft | Social Security Protection | Device Security</p>
+    <p>Identity Protection | Fraud Prevention | Device Security</p>
     <button class="btn">Get Protection</button>
 </div>
 
-<style>
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d1');
-    background-size: cover;
-    background-position: center;
-    padding:140px 20px;
-    text-align:center;
-}
-</style>
-
 <div class="section">
-    <h2>Why Choose Sky Expedition Securities?</h2>
-
-    <p>
-    At Sky Expedition Securities, we understand that online safety is a serious concern,
-    especially for senior citizens. Our mission is to provide simple, reliable, and
-    effective cybersecurity solutions that protect your identity, your finances, and your peace of mind.
-    </p>
-
-    <p>
-    Every day, thousands of seniors fall victim to online scams, fraud, and identity theft.
-    Our services are specifically designed to prevent these threats before they happen.
-    </p>
-
-    <p>
-    ✔ Easy-to-use protection tools<br>
-    ✔ Dedicated support for seniors<br>
-    ✔ Real-time monitoring against fraud<br>
-    ✔ Trusted and reliable system
-    </p>
-</div>
-
-<div class="section">
-    <h2>Cyber Safety Tips & Insights</h2>
-
+    <h2>Our Services</h2>
     <div class="cards">
-        <div class="card blog">
-            <h3>Top 5 Online Scams in 2026</h3>
-            <p>Learn how scammers target seniors and how you can stay protected with simple precautions.</p>
+        <div class="card">
+            <h3>Identity Protection</h3>
+            <p>Keep your personal information safe from hackers.</p>
         </div>
-
-        <div class="card blog">
-            <h3>How to Protect Your Identity Online</h3>
-            <p>Your identity is valuable. Discover how to secure your personal information effectively.</p>
+        <div class="card">
+            <h3>Fraud Prevention</h3>
+            <p>Stop scams targeting senior citizens.</p>
         </div>
-
-        <div class="card blog">
-            <h3>Safe Internet Usage for Seniors</h3>
-            <p>Step-by-step guide to browsing safely and avoiding dangerous websites.</p>
+        <div class="card">
+            <h3>Device Security</h3>
+            <p>Protect your devices from cyber attacks.</p>
         </div>
     </div>
 </div>
 
 <div class="section">
-    <h2>What Our Clients Say</h2>
+    <h2>Why Choose Us</h2>
+    <p>We provide simple, reliable cybersecurity solutions designed for seniors.</p>
+</div>
 
+<div class="section">
+    <h2>Testimonials</h2>
     <div class="testimonial">
-        <p>"I was scammed once, but after using this service, I feel safe again."</p>
+        <p>"Excellent service! I feel safe online now."</p>
         <strong>- John, USA</strong>
-    </div>
-
-    <div class="testimonial">
-        <p>"Very easy to use and extremely helpful for seniors like me."</p>
-        <strong>- Martha, USA</strong>
-    </div>
-
-</div>
-
-<div class="section">
-    <h2>Latest Blog</h2>
-
-    <div class="cards">
-        <div class="card blog">
-            <h3>Top 5 Online Scams in 2026</h3>
-            <p>Learn how to stay safe from modern cyber threats.</p>
-        </div>
-
-        <div class="card blog">
-            <h3>How Seniors Can Stay Safe Online</h3>
-            <p>Simple tips for daily protection.</p>
-        </div>
     </div>
 </div>
 
 <div class="section">
     <h2>Contact Us</h2>
-    <p>Email: support@skyexpedition.com</p>
-</div>
 
-<footer>
-    <p>© 2026 Sky Expedition Securities</p>
-</footer>
+    <a href="tel:+1234567890" class="btn">📞 Call Now</a>
+
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
