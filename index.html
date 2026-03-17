@@ -8,8 +8,8 @@
 body {
     margin:0;
     font-family: 'Segoe UI', sans-serif;
-    background:#0f2027;
-    color:white;
+    background:#f5f7fa;
+    color:#222;
 }
 
 /* NAVBAR */
@@ -55,12 +55,13 @@ nav a {
     text-align:center;
 }
 
-/* CARDS */
-.cards {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+.card {
+    width:260px;
+    padding:20px;
+    border-radius:12px;
+    background:white;
+    color:#222;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 .card {
@@ -74,9 +75,11 @@ nav a {
 .testimonial {
     max-width:600px;
     margin:20px auto;
-    background: rgba(255,255,255,0.1);
+    background:white;
+    color:#222;
     padding:20px;
     border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* BLOG */
@@ -123,28 +126,46 @@ footer {
 </style>
 
 <div class="section">
-    <h2>What Our Clients Say</h2>
+    <h2>Why Choose Sky Expedition Securities?</h2>
 
-    <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/men/65.jpg" width="60" style="border-radius:50%;">
-        <p>"I was scammed once, but now I feel completely safe."</p>
-        <strong>- John, USA</strong>
-    </div>
+    <p>
+    At Sky Expedition Securities, we understand that online safety is a serious concern,
+    especially for senior citizens. Our mission is to provide simple, reliable, and
+    effective cybersecurity solutions that protect your identity, your finances, and your peace of mind.
+    </p>
 
-    <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/women/70.jpg" width="60" style="border-radius:50%;">
-        <p>"Very easy and perfect for seniors like me."</p>
-        <strong>- Martha, USA</strong>
-    </div>
+    <p>
+    Every day, thousands of seniors fall victim to online scams, fraud, and identity theft.
+    Our services are specifically designed to prevent these threats before they happen.
+    </p>
 
+    <p>
+    ✔ Easy-to-use protection tools<br>
+    ✔ Dedicated support for seniors<br>
+    ✔ Real-time monitoring against fraud<br>
+    ✔ Trusted and reliable system
+    </p>
 </div>
 
 <div class="section">
-    <h2>Why Choose Us?</h2>
-    <p>✔ Simple & Easy<br>
-       ✔ Trusted Protection<br>
-       ✔ Built for Seniors<br>
-       ✔ 24/7 Monitoring</p>
+    <h2>Cyber Safety Tips & Insights</h2>
+
+    <div class="cards">
+        <div class="card blog">
+            <h3>Top 5 Online Scams in 2026</h3>
+            <p>Learn how scammers target seniors and how you can stay protected with simple precautions.</p>
+        </div>
+
+        <div class="card blog">
+            <h3>How to Protect Your Identity Online</h3>
+            <p>Your identity is valuable. Discover how to secure your personal information effectively.</p>
+        </div>
+
+        <div class="card blog">
+            <h3>Safe Internet Usage for Seniors</h3>
+            <p>Step-by-step guide to browsing safely and avoiding dangerous websites.</p>
+        </div>
+    </div>
 </div>
 
 <div class="section">
